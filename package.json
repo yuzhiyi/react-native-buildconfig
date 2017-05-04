@@ -1,0 +1,19 @@
+{
+  "name": "react-native-buildconfig",
+  "version": "1.0.0",
+  "description": "make test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuzhiyi/react-native-buildconfig.git"
+  },
+  "author": "yuzhiyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuzhiyi/react-native-buildconfig/issues"
+  },
+  "homepage": "https://github.com/yuzhiyi/react-native-buildconfig#readme"
+}
