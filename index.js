@@ -1,5 +1,6 @@
 import {
-    NativeModules
+    NativeModules,
+    DeviceEventEmitter
 } from 'react-native';
 
 const BuildConfigModule = NativeModules.BuildConfigModule;
