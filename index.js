@@ -18,7 +18,7 @@ const BuildConfig = {
                 resolve(resp);
             });
         });
-    }
+    },
     getVersionName() {
         return new Promise((resolve, reject) => {
             try {
@@ -32,7 +32,7 @@ const BuildConfig = {
                 resolve(resp);
             });
         });
-    }
+    },
     getBuildTime() {
         return new Promise((resolve, reject) => {
             try {
@@ -46,7 +46,7 @@ const BuildConfig = {
                 resolve(resp);
             });
         });
-    }
+    },
     getGitSha() {
         return new Promise((resolve, reject) => {
             try {
