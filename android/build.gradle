@@ -1,4 +1,11 @@
 apply plugin: 'com.android.library'
+def gitSha = 'git rev-parse --short HEAD'.execute([], project.rootDir).text.trim()
+//创建当前时间字符创 比如 0411_1213 表示 4月11号，12点13分
+def buildTime() {
+    def date = new Date()
+    def formattedDate = date.format('MMdd_HHmm')
+    return formattedDate
+}
 
 android {
     compileSdkVersion 23
@@ -11,7 +18,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        //在BuildConfig里面创建BUILD_TIME变量，代表apk编译时间
+        buildConfigField "String", "BUILD_TIME", "\"${buildTime()}\""
+        //在BuildConfig里面创建GIT_SHA变量，代表本项目最新git的commit的值
+        buildConfigField "String", "GIT_SHA", "\"${gitSha}\""
     }
     buildTypes {
         release {
