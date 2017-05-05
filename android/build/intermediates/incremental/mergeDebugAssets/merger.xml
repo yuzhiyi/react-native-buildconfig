@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/chenwenyu/Bugly/android/react-native-buildconfig/src/main/assets"/><source path="/home/chenwenyu/Bugly/android/react-native-buildconfig/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/home/chenwenyu/Bugly/android/react-native-buildconfig/src/debug/assets"/></dataSet></merger>
